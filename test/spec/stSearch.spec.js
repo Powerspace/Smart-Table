@@ -216,10 +216,9 @@ describe('stSearch Directive', function () {
             scope.searchPredicate = 'firstname';
             scope.$apply();
             trs = element.find('tr.test-filtered');
-            expect(trs.length).toBe(2);
+            expect(trs.length).toBe(1);
             expect(trToModel(trs)).toEqual([
-                {name: 'Renard', firstname: 'Laurent', age: 66},
-                {name: 'Francoise', firstname: 'Frere', age: 99}
+                { name : 'Renard', firstname : 'Laurent', age : 66 }
             ]);
 
         }));
